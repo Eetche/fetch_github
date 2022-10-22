@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    background-color: black;
+    font-family: "Rubik", sans-serif;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    z-index: -101;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    min-height: 5%;
+    left: 0;
+    top: -5%;
+    background-color: #dc3545;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    font-weight: 100;
+    transition-duration: 200ms;
+}
+
+input {
+    font-family: "Rubik", sans-serif;
+    padding: 10px;
+    font-size: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    width: 30%;
+    height: 3rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 100%;
+    letter-spacing: 100%;
+}
+
+.profile {
+    background-color: rgb(30, 30, 30);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    min-height: 10vw;
+    padding: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.profile .top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.profile .avatar {
+    width: 10%;
+    height: 10%;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.profile .username {
+    margin-left: 3vw;
+    font-size: 3vw;
+    color: white;
+}
+
+.info {
+    font-size: 1.5vw;
+    width: 100%;
+    color: white;
+    padding-top: 1vw;
+}
+
+.info div {
+    text-transform: uppercase;
+}
