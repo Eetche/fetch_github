@@ -15,7 +15,7 @@ const info = {
     id: document.querySelector(".id")
 }
 
-async function fetchUser(url) {
+function fetchUser(url) {
     url = url.replace("//", "//api.")
         .replace("m/", "m/users/")
 
